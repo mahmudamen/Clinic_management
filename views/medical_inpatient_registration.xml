@@ -45,17 +45,7 @@
                         <group>
                             <field name="info" />
                         </group>
-                        <group colspan="4" col="4">
-                                    <field name="bed_transfers_ids"
-                                        colspan="4">
-                                        <tree editable="bottom">
-                                            <field name="date" />
-                                            <field name="bed_from" />
-                                            <field name="bed_to" />
-                                            <field name="reason" />
-                                        </tree>
-                                    </field>
-                                </group>
+
                         <group string="Care Plan">
                             <field name="nursing_plan" />
                             <field name="discharge_plan" />

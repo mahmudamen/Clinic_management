@@ -1459,7 +1459,7 @@ msgstr "سعال"
 #: model:ir.model.fields,field_description:basic_hms.field_medical_patient_medication1__course_completed
 #: model:ir.model.fields,field_description:basic_hms.field_medical_patient_medication__course_completed
 msgid "Course Completed"
-msgstr "اكتملت الدورة"
+msgstr "اكتمال الدورة"
 
 #. module: basic_hms
 #: model:ir.actions.act_window,name:basic_hms.action_create_invoice_val1
@@ -1791,7 +1791,7 @@ msgstr "الكثير من أحلام اليقظة"
 #: model:ir.model.fields.selection,name:basic_hms.selection__medical_prescription_line__duration_period__days
 #: model:ir.model.fields.selection,name:basic_hms.selection__medical_prescription_line__frequency_unit__days
 msgid "Days"
-msgstr "الايام"
+msgstr "يوم"
 
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_patient__deceased
@@ -1948,7 +1948,7 @@ msgstr "مريض الخروج"
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_inpatient_registration__discharge_plan
 msgid "Discharge Plan"
-msgstr "خطة التفريغ"
+msgstr "خطة العلاج الخارجي"
 
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_inpatient_medication__discontinued
@@ -2356,7 +2356,7 @@ msgstr "اختياري"
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_patient__electricity
 msgid "Electrical supply"
-msgstr "الإمداد بالكهرباء"
+msgstr "توافر تيار كهربي"
 
 #. module: basic_hms
 #: model:ir.model.fields.selection,name:basic_hms.selection__medical_icu_ecg__st_segment__elevated
@@ -2499,7 +2499,7 @@ msgstr "توسع"
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_inpatient_registration__discharge_date
 msgid "Expected Discharge date"
-msgstr "تاريخ التفريغ المتوقع"
+msgstr "تاريخ الخروج المتوقع"
 
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_insurance__member_exp
@@ -2573,7 +2573,7 @@ msgstr "أسرة"
 #. module: basic_hms
 #: model_terms:ir.ui.view,arch_db:basic_hms.medical_patients_form_view
 msgid "Family APGAR"
-msgstr "Family APGAR"
+msgstr "قضايا عائلية"
 
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_patient__family_history_ids
@@ -2733,7 +2733,7 @@ msgstr "فرانك بريك"
 #. module: basic_hms
 #: model:ir.model.fields.selection,name:basic_hms.selection__medical_inpatient_registration__state__free
 msgid "Free"
-msgstr "حر"
+msgstr "مسجل"
 
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_inpatient_medication__frequency
@@ -3127,7 +3127,7 @@ msgstr "مثلي الجنس"
 
 #. module: basic_hms
 #: model:ir.ui.menu,name:basic_hms.main_menu_hospital_management
-msgid "Hospital Management"
+msgid "Clinic Management"
 msgstr "ادارة العيادة"
 
 #. module: basic_hms
@@ -3143,7 +3143,7 @@ msgstr "حالة الاستشفاء"
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_inpatient_registration__hospitalization_date
 msgid "Hospitalization date"
-msgstr "تاريخ الاستشفاء"
+msgstr "الدخول"
 
 #. module: basic_hms
 #: model:ir.model.fields.selection,name:basic_hms.selection__medical_inpatient_registration__state__hospitalized
@@ -3153,7 +3153,7 @@ msgstr "في المستشفى"
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_patient__hostile_area
 msgid "Hostile Area"
-msgstr "منطقة معادية"
+msgstr "شعبي"
 
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_patient__sleep_hours
@@ -3270,7 +3270,7 @@ msgstr "ICU"
 #: model:ir.model.fields,field_description:basic_hms.field_pet_type__id
 #: model:ir.model.fields,field_description:basic_hms.field_psc_code__id
 msgid "ID"
-msgstr "هوية شخصية"
+msgstr "كود المريض"
 
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_res_partner__reference
@@ -3311,7 +3311,7 @@ msgstr "متعاطي المخدرات IV"
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_physician__code
 msgid "Id"
-msgstr "هوية شخصية"
+msgstr "رقم تسلسلي"
 
 #. module: basic_hms
 #: model:ir.model.fields,help:basic_hms.field_medical_appointment__message_needaction
@@ -3430,7 +3430,7 @@ msgstr "معلومات عن التشخيص"
 #. module: basic_hms
 #: model_terms:ir.ui.view,arch_db:basic_hms.medical_patients_form_view
 msgid "Infrastructure"
-msgstr "بنية تحتية"
+msgstr "البنية التحيتة"
 
 #. module: basic_hms
 #: model:ir.model.fields.selection,name:basic_hms.selection__medical_appointment__patient_status__inpatient
@@ -4961,13 +4961,13 @@ msgstr "يطيع الأوامر"
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_patient_evaluation__object_recognition
 msgid "Object Recognition"
-msgstr ""
+msgstr "التعرف على الأشياء"
 
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_vaccination__observations
 #: model_terms:ir.ui.view,arch_db:basic_hms.patient_vaccinations_document
 msgid "Observations"
-msgstr ""
+msgstr "الملاحظات"
 
 #. module: basic_hms
 #: model_terms:ir.ui.view,arch_db:basic_hms.medical_patients_form_view
@@ -5342,7 +5342,7 @@ msgstr "معلومات عامة عن المريض"
 #: model:ir.actions.act_window,name:basic_hms.action_medical_inpatient_registration
 #: model:ir.ui.menu,name:basic_hms.menu_ss_hospitalization_administration
 msgid "Patient Hospitalization"
-msgstr "استشفاء المريض"
+msgstr " مريض داخلي"
 
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_prescription_order__patient_id
@@ -5740,12 +5740,12 @@ msgstr "تفاصيل الوصفة"
 #: model:ir.model.fields,field_description:basic_hms.field_medical_prescription_line__name
 #: model:ir.model.fields,field_description:basic_hms.field_medical_prescription_order__name
 msgid "Prescription ID"
-msgstr "معرف الوصفة الطبية"
+msgstr "رقم الوصفة الطبية"
 
 #. module: basic_hms
 #: model_terms:ir.ui.view,arch_db:basic_hms.prescription_demo_report_template
 msgid "Prescription ID :"
-msgstr "معرف الوصفة الطبية:"
+msgstr "رقم الوصفة الطبية:"
 
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_prescription_order__prescription_line_ids
@@ -5765,7 +5765,7 @@ msgstr "أمر وصفة طبية"
 #. module: basic_hms
 #: model:ir.actions.act_window,name:basic_hms.action_view_priscription_id2
 msgid "Prescription Orders"
-msgstr "أوامر الوصفات الطبية"
+msgstr "الروشتة الطبية"
 
 #. module: basic_hms
 #: model_terms:ir.ui.view,arch_db:basic_hms.medical_prescription_line_tree_view
@@ -5775,7 +5775,7 @@ msgstr "خطوط الوصفة الطبية"
 #. module: basic_hms
 #: model:ir.ui.menu,name:basic_hms.dental_prescription_child
 msgid "Prescriptions"
-msgstr "الوصفات الطبية"
+msgstr " الروشتة الطبية"
 
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_patient_evaluation__present_illness
@@ -5831,7 +5831,7 @@ msgstr "طباعة بطاقة المريض"
 #. module: basic_hms
 #: model_terms:ir.ui.view,arch_db:basic_hms.medical_prescription_order_form_view
 msgid "Print Prescription"
-msgstr "وصفة طبية مطبوعة"
+msgstr "طباعة الروشتة الطبية"
 
 #. module: basic_hms
 #: model:ir.model.fields.selection,name:basic_hms.selection__medical_insurance__type__private
@@ -6166,7 +6166,7 @@ msgstr "طريق"
 #. module: basic_hms
 #: model:ir.model.fields.selection,name:basic_hms.selection__medical_inpatient_registration__admission_type__routine
 msgid "Routine"
-msgstr "نمط"
+msgstr "عادي / نمطي"
 
 #. module: basic_hms
 #: model:ir.model.fields.selection,name:basic_hms.selection__medical_puerperium_monitor__lochia_color__r
@@ -6176,7 +6176,7 @@ msgstr "روبرا"
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_patient__water
 msgid "Running Water"
-msgstr "المياه الجارية"
+msgstr "مياه جارية"
 
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_patient_rounding__sce
@@ -6235,7 +6235,7 @@ msgstr "ملح"
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_patient__sewers
 msgid "Sanitary Sewers"
-msgstr "المجاري الصحية"
+msgstr "المجاري صحية"
 
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_patient_psc__psc_school_grades_dropping
@@ -6382,7 +6382,7 @@ msgstr "بارز"
 #. module: basic_hms
 #: model:ir.model.fields.selection,name:basic_hms.selection__medical_patient__housing__0
 msgid "Shanty, deficient sanitary conditions"
-msgstr "شانتي ، ظروف صحية قاصرة"
+msgstr " ظروف صحية قاصرة"
 
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_pathology_group__desc
@@ -6458,7 +6458,7 @@ msgstr "يدخن"
 #: model:ir.model.fields,field_description:basic_hms.field_medical_patient__ses
 #: model_terms:ir.ui.view,arch_db:basic_hms.medical_patients_form_view
 msgid "Socioeconomics"
-msgstr "علم الاجتماع"
+msgstr "الوضع الاجتماعي"
 
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_patient__soft_drinks
@@ -6565,7 +6565,7 @@ msgstr "بداية العلاج"
 #: model:ir.model.fields.selection,name:basic_hms.selection__medical_insurance__type__state
 #: model_terms:ir.ui.view,arch_db:basic_hms.medical_view_report_document_lab
 msgid "State"
-msgstr "ولاية"
+msgstr "بنفسه"
 
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_appointment__validity_status
@@ -6919,7 +6919,7 @@ msgstr "كذبة مستعرضة"
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_patient__trash
 msgid "Trash recollection"
-msgstr "تذكر القمامة"
+msgstr "اعادة تدوير القمامة"
 
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_patient_disease__treatment_description
@@ -7464,317 +7464,317 @@ msgstr "medical.diet.belief"
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_diet_therapeutic
 msgid "medical.diet.therapeutic"
-msgstr ""
+msgstr "medical.diet.therapeutic"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_directions
 msgid "medical.directions"
-msgstr ""
+msgstr "medical.diet.therapeutic"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_dose_unit
 msgid "medical.dose.unit"
-msgstr ""
+msgstr "medical.dose.unit"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_drug_route
 msgid "medical.drug.route"
-msgstr ""
+msgstr "medical.drug.route"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_family_disease
 msgid "medical.family.disease"
-msgstr ""
+msgstr "medical.family.disease"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_health_service_invoice
 msgid "medical.health.service.invoice"
-msgstr ""
+msgstr "medical.health.service.invoice"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_icu_chest_drainage
 msgid "medical.icu.chest_drainage"
-msgstr ""
+msgstr "medical.icu.chest_drainage"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_icu_ecg
 msgid "medical.icu.ecg"
-msgstr ""
+msgstr "medical.icu.ecg"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_icu_glasgow
 msgid "medical.icu.glasgow"
-msgstr ""
+msgstr "medical.icu.glasgow"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_icu_ventilation
 msgid "medical.icu.ventilation"
-msgstr ""
+msgstr "medical.icu.ventilation"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_inpatient_diet
 msgid "medical.inpatient.diet"
-msgstr ""
+msgstr "medical.inpatient.diet"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_inpatient_medication
 msgid "medical.inpatient.medication"
-msgstr ""
+msgstr "medical.inpatient.medication"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_inpatient_medication_admin_time
 msgid "medical.inpatient.medication.admin.time"
-msgstr ""
+msgstr "medical.inpatient.medication.admin.time"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_inpatient_medication_log
 msgid "medical.inpatient.medication.log"
-msgstr ""
+msgstr "medical.inpatient.medication.log"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_inpatient_registration
 msgid "medical.inpatient.registration"
-msgstr ""
+msgstr "medical.inpatient.registration"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_insurance
 msgid "medical.insurance"
-msgstr ""
+msgstr "medical.insurance"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_insurance_plan
 msgid "medical.insurance.plan"
-msgstr ""
+msgstr "medical.insurance.plan"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_lab
 msgid "medical.lab"
-msgstr ""
+msgstr "medical.lab"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_lab_test_create
 msgid "medical.lab.test.create"
-msgstr ""
+msgstr "medical.lab.test.create"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_lab_test_invoice
 msgid "medical.lab.test.invoice"
-msgstr ""
+msgstr "medical.lab.test.invoice"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_lab_test_units
 msgid "medical.lab.test.units"
-msgstr ""
+msgstr "medical.lab.test.units"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_medicament
 msgid "medical.medicament"
-msgstr ""
+msgstr "medical.medicament"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_medication_dosage
 msgid "medical.medication.dosage"
-msgstr ""
+msgstr "medical.medication.dosage"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_neomatal_apgar
 msgid "medical.neomatal.apgar"
-msgstr ""
+msgstr "medical.neomatal.apgar"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_pathology
 msgid "medical.pathology"
-msgstr ""
+msgstr "medical.pathology"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_pathology_category
 msgid "medical.pathology.category"
-msgstr ""
+msgstr "medical.pathology.category"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_pathology_group
 msgid "medical.pathology.group"
-msgstr ""
+msgstr "medical.pathology.group"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_pathology_group_member
 msgid "medical.pathology.group.member"
-msgstr ""
+msgstr "medical.pathology.group.member"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_patient
 msgid "medical.patient"
-msgstr ""
+msgstr "medical.patient"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_patient_cage
 msgid "medical.patient.cage"
-msgstr ""
+msgstr "medical.patient.cage"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_patient_colposcopy_history
 msgid "medical.patient.colposcopy.history"
-msgstr ""
+msgstr "medical.patient.colposcopy.history"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_patient_disease
 msgid "medical.patient.disease"
-msgstr ""
+msgstr "medical.patient.disease"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_patient_diseases
 msgid "medical.patient.diseases"
-msgstr ""
+msgstr "medical.patient.diseases"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_patient_evaluation
 msgid "medical.patient.evaluation"
-msgstr ""
+msgstr "medical.patient.evaluation"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_patient_lab_test
 msgid "medical.patient.lab.test"
-msgstr ""
+msgstr "medical.patient.lab.test"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_patient_mammography_history
 msgid "medical.patient.mammography.history"
-msgstr ""
+msgstr "medical.patient.mammography.history"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_patient_medication
 msgid "medical.patient.medication"
-msgstr ""
+msgstr "medical.patient.medication"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_patient_medication1
 msgid "medical.patient.medication1"
-msgstr ""
+msgstr "medical.patient.medication1"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_patient_menstrual_history
 msgid "medical.patient.menstrual.history"
-msgstr ""
+msgstr "medical.patient.menstrual.history"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_patient_pap_history
 msgid "medical.patient.pap.history"
-msgstr ""
+msgstr "medical.patient.pap.history"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_patient_pregnency
 msgid "medical.patient.pregnency"
-msgstr ""
+msgstr "medical.patient.pregnency"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_patient_prental_evoultion
 msgid "medical.patient.prental.evoultion"
-msgstr ""
+msgstr "medical.patient.prental.evoultion"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_patient_psc
 msgid "medical.patient.psc"
-msgstr ""
+msgstr "medical.patient.psc"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_patient_rounding
 msgid "medical.patient.rounding"
-msgstr ""
+msgstr "medical.patient.rounding"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_patient_rounding_medical_supply
 msgid "medical.patient.rounding.medical_supply"
-msgstr ""
+msgstr "medical.patient.rounding.medical_supply"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_patient_rounding_medicament
 msgid "medical.patient.rounding.medicament"
-msgstr ""
+msgstr "medical.patient.rounding.medicament"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_patient_rounding_vaccine
 msgid "medical.patient.rounding.vaccine"
-msgstr ""
+msgstr "medical.patient.rounding.vaccine"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_pediatrics_growth_charts_who
 msgid "medical.pediatrics.growth.charts.who"
-msgstr ""
+msgstr "medical.pediatrics.growth.charts.who"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_perinatal_monitor
 msgid "medical.perinatal.monitor"
-msgstr ""
+msgstr "medical.perinatal.monitor"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_physician
 msgid "medical.physician"
-msgstr ""
+msgstr "medical.physician"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_preinatal
 msgid "medical.preinatal"
-msgstr ""
+msgstr "medical.preinatal"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_prescription_line
 msgid "medical.prescription.line"
-msgstr ""
+msgstr "medical.prescription.line"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_prescription_order
 msgid "medical.prescription.order"
-msgstr ""
+msgstr "medical.prescription.order"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_puerperium_monitor
 msgid "medical.puerperium.monitor"
-msgstr ""
+msgstr "medical.puerperium.monitor"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_rcri
 msgid "medical.rcri"
-msgstr ""
+msgstr "medical.rcri"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_rounding_procedure
 msgid "medical.rounding_procedure"
-msgstr ""
+msgstr "medical.rounding_procedure"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_secondary_condition
 msgid "medical.secondary_condition"
-msgstr ""
+msgstr "medical.secondary_condition"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_signs_and_sympotoms
 msgid "medical.signs.and.sympotoms"
-msgstr ""
+msgstr "medical.signs.and.sympotoms"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_test_type
 msgid "medical.test_type"
-msgstr ""
+msgstr "medical.test_type"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_vaccination
 msgid "medical.vaccination"
-msgstr ""
+msgstr "medical.vaccination"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_medical_test_critearea
 msgid "medical_test.critearea"
-msgstr ""
+msgstr "medical_test.critearea"
 
 #. module: basic_hms
 #: model_terms:ir.ui.view,arch_db:basic_hms.medical_medicament_tree_view
 msgid "medicament"
-msgstr ""
+msgstr "دواء"
 
 #. module: basic_hms
 #: model_terms:ir.ui.view,arch_db:basic_hms.medical_medicament_form_view
 msgid "medicaments"
-msgstr ""
+msgstr "الأدوية"
 
 #. module: basic_hms
 #: model_terms:ir.ui.view,arch_db:basic_hms.create_prescription_invoice_wizard_view
@@ -7783,61 +7783,88 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:basic_hms.medical_lab_test_invoice_wizard_view
 #: model_terms:ir.ui.view,arch_db:basic_hms.view_prescription_shipment_wizard_view
 msgid "or"
-msgstr ""
+msgstr "او"
 
 #. module: basic_hms
 #: model:ir.model.fields.selection,name:basic_hms.selection__medical_pediatrics_growth_charts_who__measure__p
 msgid "percentile"
-msgstr ""
+msgstr "النسبة المئوية"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_pet_type
 msgid "pet.type"
-msgstr ""
+msgstr "pet.type"
 
 #. module: basic_hms
 #: model:ir.model,name:basic_hms.model_psc_code
 msgid "psc.code"
-msgstr ""
+msgstr "psc.code"
 
 #. module: basic_hms
 #: model:ir.model.fields.selection,name:basic_hms.selection__medical_icu_ecg__pacemaker__pk
 msgid "purkinje"
-msgstr ""
+msgstr "بوركينجي"
 
 #. module: basic_hms
 #: model:ir.model.fields,field_description:basic_hms.field_medical_pediatrics_growth_charts_who__sex
 msgid "sex"
-msgstr ""
+msgstr "الجنس"
 
 #. module: basic_hms
 #: model_terms:ir.ui.view,arch_db:basic_hms.patient_diseases_document_report
 #: model_terms:ir.ui.view,arch_db:basic_hms.patient_medications_document_report
 #: model_terms:ir.ui.view,arch_db:basic_hms.patient_vaccinations_document
 msgid "sex :"
-msgstr ""
+msgstr "الجنس:"
 
 #. module: basic_hms
 #: model:ir.model.fields.selection,name:basic_hms.selection__medical_icu_ecg__pacemaker__sa
 msgid "sinus Node"
-msgstr ""
+msgstr "العقدة الجيبية"
 
 #. module: basic_hms
 #: model:res.groups,comment:basic_hms.group_chemist
 msgid "the user will have access to his own data in the Chemist."
-msgstr ""
+msgstr "سيتمكن المستخدم من الوصول إلى بياناته الخاصة في الكيميائي."
 
 #. module: basic_hms
 #: model:res.groups,comment:basic_hms.bi_group_doctor
 msgid "the user will have access to his own data in the Doctor."
-msgstr ""
+msgstr "سيتمكن المستخدم من الوصول إلى بياناته الخاصة في الدكتور."
 
 #. module: basic_hms
 #: model:res.groups,comment:basic_hms.group_medical_group
 msgid "the user will have access to his own data in the Medical Group."
-msgstr ""
+msgstr "سيتمكن المستخدم من الوصول إلى بياناته الخاصة في المجموعة الطبية."
 
 #. module: basic_hms
 #: model:res.groups,comment:basic_hms.group_receptionist
 msgid "the user will have access to his own data in the Receptionist."
-msgstr ""
+msgstr "سيتمكن المستخدم من الوصول إلى بياناته الخاصة في موظف الاستقبال."
+
+#. module: basic_hms
+#: model_terms:ir.ui.view,arch_db:basic_hms.medical_patients_kanban_view
+msgid "ID:"
+msgstr "كود:"
+
+#. module: basic_hms
+#: model:ir.model.fields,field_description:basic_hms.field_medical_patient__prescription_count
+msgid "Prescription"
+msgstr "روشتة"
+
+#. module: basic_hms
+#: model_terms:ir.ui.view,arch_db:basic_hms.medical_patients_form_view
+msgid "prescription"
+msgstr "روشتة"
+
+#. module: basic_hms
+#: model:ir.actions.act_window,name:basic_hms.action_medical_patient_priscription
+msgid "priscription"
+msgstr "روشتة"
+
+#. module: basic_hms
+#: model:ir.actions.act_window,name:basic_hms.action_medical_patient_appointment
+#: model_terms:ir.ui.view,arch_db:basic_hms.medical_patients_form_view
+msgid "Appointment"
+msgstr "موعد"
+

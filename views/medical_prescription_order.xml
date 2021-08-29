@@ -7,7 +7,7 @@
 
         <act_window id="action_view_priscription_id2" name="Prescription Orders"
             res_model="medical.prescription.order" binding_model="medical.patient"
-            view_mode="tree,form" domain="[('patient_id', '=', active_id)]" />
+            view_mode="form,tree" domain="[('patient_id', '=', active_id)]" />
 
         <!-- Tree view -->
         <record id="medical_prescription_order_tree_view" model="ir.ui.view">

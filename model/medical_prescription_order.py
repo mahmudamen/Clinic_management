@@ -5,7 +5,7 @@ from odoo import api, fields, models, _
 from datetime import date,datetime
 
 class medical_prescription_order(models.Model):
-    _name = "medical.prescription.order"
+    _name = 'medical.prescription.order'
 
     name = fields.Char('Prescription ID')
     patient_id = fields.Many2one('medical.patient','Patient ID')
@@ -45,6 +45,5 @@ class medical_prescription_order(models.Model):
     @api.onchange('name')
     def onchange_p_name(self):
         self.pricelist_id = 1 or False
-
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

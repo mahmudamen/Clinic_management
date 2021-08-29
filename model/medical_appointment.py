@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of BrowseInfo. See LICENSE file for full copyright and licensing details.
+
 
 from odoo import api, fields, models, _
 #from datetime import datetime, date
@@ -7,10 +7,11 @@ from datetime import datetime, timedelta
 from odoo.exceptions import UserError
 
 class medical_appointment(models.Model):
-	_name = "medical.appointment"
+	_name = 'medical.appointment'
 	_inherit = 'mail.thread'
 
 	name = fields.Char(string="Appointment ID", readonly=True ,copy=True)
+	patient_id = fields.Many2one('medical.patient','Patient',required=True)
 	is_invoiced = fields.Boolean(copy=False,default = False)
 	institution_partner_id = fields.Many2one('res.partner',domain=[('is_institution','=',True)],string="Health Center")
 	inpatient_registration_id = fields.Many2one('medical.inpatient.registration',string="Inpatient Registration")
@@ -19,7 +20,6 @@ class medical_appointment(models.Model):
 			('outpatient', 'Outpatient'),
 			('inpatient', 'Inpatient'),
 		], 'Patient status', sort=False,default='outpatient')
-	patient_id = fields.Many2one('medical.patient','Patient',required=True)
 	urgency_level = fields.Selection([
 			('a', 'Normal'),
 			('b', 'Urgent'),
@@ -128,4 +128,4 @@ class medical_appointment(models.Model):
 		return result
 
 		
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+

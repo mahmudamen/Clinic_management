@@ -282,4 +282,42 @@ class medical_patient(models.Model):
         result = super(medical_patient, self).create(val)
         return result
 
-# vim=expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+    prescription_count = fields.Integer(compute='prescription_compute_count')
+    appointment_count = fields.Integer(compute='appointment_compute_count')
+
+    def prescription_compute_count(self):
+        for record in self:
+            record.prescription_count = self.env['medical.prescription.order'].search_count(
+                [('patient_id', '=', self.id)])
+
+    def appointment_compute_count(self):
+        for record in self:
+            record.appointment_count = self.env['medical.appointment'].search_count(
+                [('patient_id', '=', self.id)])
+
+    def get_prescription(self):
+        return {
+            'name': _('prescription'),
+            'view_type':'form',
+            'res_model':'medical.prescription.order',
+            'view_id':False,
+            'view_mode':'tree,form',
+            'type':'ir.actions.act_window',
+            'domain': [('patient_id', '=', self.id)],
+            'context': {'default_patient_id' : self.id},
+
+        }
+
+    def get_appointments(self):
+        return {
+            'name': _('Appointment'),
+            'view_type':'form',
+            'res_model':'medical.appointment',
+            'view_id':False,
+            'view_mode':'tree,form',
+            'type':'ir.actions.act_window',
+            'domain': [('patient_id', '=', self.id)],
+            'context': {'default_patient_id': self.id},
+
+        }
+

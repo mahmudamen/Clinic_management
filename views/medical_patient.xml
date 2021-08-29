@@ -11,6 +11,15 @@
                             string="Print Patient Card" class="oe_highlight" />
                     </header>
                     <sheet>
+                           <div name="button_box_prescription" class="oe_button_box" position="inside">
+                                <button class="oe_stat_button" type="object" name="get_prescription"  icon="fa-file-text">
+                                <field string="prescription" id="prescription" name="prescription_count" widget="statinfo"/>
+                                </button>
+
+                                <button class="oe_stat_button" type="object" name="get_appointments"  icon="fa-calendar">
+                                <field string="appointment" id="appointment" name="appointment_count" widget="statinfo"/>
+                                </button>
+                           </div>
                         <field name="photo" nolabel="1"
                             class="oe_left oe_avatar" img_width="120"
                             img_height="120" width="120" height="120"
@@ -395,11 +404,57 @@
             </field>
         </record>
 
+        <record id="medical_patients_kanban_view" model="ir.ui.view">
+                    <field name="name">medical_patients.Kanban</field>
+                    <field name="model">medical.patient</field>
+                    <field name="arch" type="xml">
+                        <kanban>
+                            <field name="id"/>
+                            <field name="name"/>
+                            <progressbar field="activity_state" colors='{"planned": "success", "today": "warning", "overdue": "danger"}'/>
+                            <templates>
+                                <t t-name="kanban-box">
+                                      <div class="oe_kanban_global_click">
+                                        <div class="o_kanban_image">
+                                            <img t-att-src="kanban_image('medical.patient', 'photo', record.id.raw_value)" alt="photo" class="o_image_64_contain"/>
+                                        </div>
+                                        <div class="oe_kanban_details">
+                                            <strong class="o_kanban_record_title">
+                                                <field name="patient_id"/>
+                                            </strong>
+                                            <ul>
+                                                <li><strong>ID: <field name="name"></field></strong></li>
+                                            </ul>
+                                            <div name="tags"/>
+                                        </div>
+                                    </div>
+                                </t>
+                            </templates>
+                        </kanban>
+                    </field>
+                </record>
+
         <record id="action_medical_patient" model="ir.actions.act_window">
             <field name="name">Patients</field>
             <field name="res_model">medical.patient</field>
             <field name="binding_view_types">form</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">kanban,tree,form</field>
+        </record>
+
+        <record id="action_medical_patient_priscription" model="ir.actions.act_window">
+            <field name="name">priscription</field>
+            <field name="res_model">medical.prescription.order</field>
+            <field name="view_mode">form</field>
+            <field name="domain">[('patient_id', '=', active_id)]</field>
+            <field name="context">{'default_patient_id' : active_id}</field>
+        </record>
+
+        <record id="action_medical_patient_appointment" model="ir.actions.act_window">
+            <field name="name">appointment</field>
+            <field name="res_model">medical.appointment</field>
+            <field name="view_mode">form,tree</field>
+            <field name="domain">[('patient_id', '=', active_id)]</field>
+            <field name="context">{'default_patient_id' : active_id}</field>
         </record>
 
         <menuitem id="menu_medical_patient_code" action="action_medical_patient"
@@ -407,14 +462,14 @@
 
         <act_window id="action_view_priscription_id2" name="Prescription Orders"
             res_model="medical.prescription.order" binding_model="medical.patient"
-            view_mode="tree" domain="[('patient_id', '=', active_id)]" />
+            view_mode="form" context="{'default_patient_id': active_id}" domain="[('patient_id', '=', active_id)]" />
+
+        <act_window id="action_view_medical_appointment" name="Appointment"
+            res_model="medical.appointment" binding_model="medical.patient"
+            view_mode="form" context="{'default_patient_id': active_id}" domain="[('patient_id', '=', active_id)]" />
 
         <act_window id="action_view_lab_id" name="Lab Reports"
             res_model="medical.lab" binding_model="medical.patient"
-            view_mode="tree,form" domain="[('patient_id', '=', active_id)]" />
-
-        <act_window id="action_psc_id" name="PSC"
-            res_model="medical.patient.psc" binding_model="medical.patient"
-            view_mode="tree,form" domain="[('patient_id', '=', active_id)]" />
+            view_mode="form" context="{'default_patient_id': active_id}" domain="[('patient_id', '=', active_id)]" />
 
 </odoo>

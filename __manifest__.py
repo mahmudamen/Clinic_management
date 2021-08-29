@@ -40,7 +40,6 @@
             'security/hospital_groups.xml',
             'data/ir_sequence_data.xml',
             'views/assets.xml',
-            'views/login_page.xml',
             'views/main_menu_file.xml',
             'wizard/medical_appointments_invoice_wizard.xml',
             'wizard/create_prescription_invoice_wizard.xml',
