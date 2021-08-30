@@ -11,7 +11,7 @@ class medical_appointment(models.Model):
 	_inherit = 'mail.thread'
 
 	name = fields.Char(string="Appointment ID", readonly=True ,copy=True)
-	patient_id = fields.Many2one('medical.patient','Patient',required=True)
+	patient_id = fields.Many2one('medical.patient','Patient')
 	is_invoiced = fields.Boolean(copy=False,default = False)
 	institution_partner_id = fields.Many2one('res.partner',domain=[('is_institution','=',True)],string="Health Center")
 	inpatient_registration_id = fields.Many2one('medical.inpatient.registration',string="Inpatient Registration")
@@ -61,12 +61,12 @@ class medical_appointment(models.Model):
 		result = super(medical_appointment, self).create(vals)
 		return result
 
-	@api.onchange('inpatient_registration_id')
-	def onchange_patient(self):
-		if not self.inpatient_registration_id:
-			self.patient_id = ""
-		inpatient_obj = self.env['medical.inpatient.registration'].browse(self.inpatient_registration_id.id)
-		self.patient_id = inpatient_obj.id
+	#@api.onchange('inpatient_registration_id')
+	#def onchange_patient(self):
+	#	if not self.inpatient_registration_id:
+	#		self.patient_id = ""
+	#	inpatient_obj = self.env['medical.inpatient.registration'].browse(self.inpatient_registration_id.id)
+	#	self.patient_id = inpatient_obj.id
 
 	def confirm(self):
 		self.write({'state': 'confirmed'})

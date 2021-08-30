@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d72e733-6439-4034-afbb-e8d5874f00b3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/static/src/img/prescription-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__manifest__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/medical_appointment.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/medical_appointment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/medical_patient.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/medical_patient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/medical_prescription_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/medical_prescription_order.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translate/ar_001.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/translate/ar_001.po" beforeDir="false" afterPath="$PROJECT_DIR$/translate/ar_001.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/login_page.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/views/medical_appointment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/medical_appointment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/medical_inpatient_registration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/medical_inpatient_registration.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/medical_patient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/medical_patient.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/medical_patient_medication.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/medical_patient_medication.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/medical_patient_medication1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/medical_patient_medication1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/medical_prescription_order.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/medical_prescription_order.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +29,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../odoo-14/odoo/odoo-bin" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -113,7 +105,13 @@
       <option name="presentableId" value="LOCAL؜٠٠٠٠٢" />
       <updated>1629899022152</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL؜٠٠٠٠٣" summary="smart button">
+      <created>1630237122664</created>
+      <option name="number" value="LOCAL؜٠٠٠٠٣" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٠٣" />
+      <updated>1630237122664</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -123,6 +121,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="func" />
     <MESSAGE value="arabic trans" />
-    <option name="LAST_COMMIT_MESSAGE" value="arabic trans" />
+    <MESSAGE value="smart button" />
+    <option name="LAST_COMMIT_MESSAGE" value="smart button" />
   </component>
 </project>
