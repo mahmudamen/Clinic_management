@@ -434,11 +434,22 @@
                     </field>
                 </record>
 
+        <record model="ir.ui.view" id="view_medical_patient_graph">
+           <field name="name">medical.patient.graph</field>
+           <field name="model">medical.patient</field>
+           <field name="type">graph</field>
+           <field name="arch" type="xml">
+                 <graph string="medical patient"  orientation="horizontal" type="bar" >
+                    <field name="age"/>
+                     <field name="patient_id" group="True" type="measure" />
+                </graph>
+            </field>
+        </record>
         <record id="action_medical_patient" model="ir.actions.act_window">
             <field name="name">Patients</field>
             <field name="res_model">medical.patient</field>
             <field name="binding_view_types">form</field>
-            <field name="view_mode">kanban,tree,form</field>
+            <field name="view_mode">kanban,tree,form,graph</field>
         </record>
 
         <record id="action_medical_patient_priscription" model="ir.actions.act_window">

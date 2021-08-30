@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d72e733-6439-4034-afbb-e8d5874f00b3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/medical_appointment.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/medical_appointment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/medical_appointment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/medical_appointment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/medical_patient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/medical_patient.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +108,13 @@
       <option name="presentableId" value="LOCAL؜٠٠٠٠٣" />
       <updated>1630237122664</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL؜٠٠٠٠٤" summary="fix smart button bug">
+      <created>1630306966698</created>
+      <option name="number" value="LOCAL؜٠٠٠٠٤" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٠٤" />
+      <updated>1630306966698</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -122,6 +125,7 @@
     <MESSAGE value="func" />
     <MESSAGE value="arabic trans" />
     <MESSAGE value="smart button" />
-    <option name="LAST_COMMIT_MESSAGE" value="smart button" />
+    <MESSAGE value="fix smart button bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix smart button bug" />
   </component>
 </project>
