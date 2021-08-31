@@ -393,13 +393,20 @@
             <field name="name">medical.patients.tree.view</field>
             <field name="model">medical.patient</field>
             <field name="arch" type="xml">
-                <tree string="Patient Information">
+                <tree string="Patient Information" multi_edit="1" duplicate="false">
                     <field name="name" />
-                    <field name="patient_id" />
-                    <field name="sex" />
-                    <field name="date_of_birth" />
-                    <field name="primary_care_physician_id" />
-                    <field name="deceased" />
+                    <field name="patient_id" optional="show"/>
+                    <field name="sex" optional="show"/>
+                    <field name="date_of_birth" optional="show"/>
+                    <field name="age" optional="show"/>
+                    <field name="primary_care_physician_id" widget="Many2one" optional="show"/>
+                    <field name="deceased" optional="hide"/>
+                    <field name="marital_status" optional="hide"/>
+                    <field name="partner_address_id" optional="hide"/>
+                    <field name="blood_type" optional="hide"/>
+                    <field name="current_insurance_id" widget="Many2one" optional="hide"/>
+                    <field name="rh" optional="hide"/>
+                    <field name="receivable" optional="hide"/>
                 </tree>
             </field>
         </record>
@@ -439,17 +446,29 @@
            <field name="model">medical.patient</field>
            <field name="type">graph</field>
            <field name="arch" type="xml">
-                 <graph string="medical patient"  orientation="horizontal" type="bar" >
+                 <graph string="medical patient"  orientation="horizontal"  type="pie" >
                     <field name="age"/>
                      <field name="patient_id" group="True" type="measure" />
                 </graph>
             </field>
         </record>
+
+        <record id="view_medical_patient_report_pivot" model="ir.ui.view">
+            <field name="name">medical.patient.pivot</field>
+            <field name="model">medical.patient</field>
+            <field name="arch" type="xml">
+                <pivot string="Patient History Analysis">
+                   <field name="patient_id" type="row"/>
+                   <field name="primary_care_physician_id" type="measure"/>
+                </pivot>
+            </field>
+        </record>
+
         <record id="action_medical_patient" model="ir.actions.act_window">
             <field name="name">Patients</field>
             <field name="res_model">medical.patient</field>
             <field name="binding_view_types">form</field>
-            <field name="view_mode">kanban,tree,form,graph</field>
+            <field name="view_mode">kanban,tree,form,graph,pivot</field>
         </record>
 
         <record id="action_medical_patient_priscription" model="ir.actions.act_window">

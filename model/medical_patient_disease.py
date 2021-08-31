@@ -40,4 +40,3 @@ class medical_patient_disease(models.Model):
     extra_info = fields.Text('info')
 
 
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
